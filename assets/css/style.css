@@ -1,13 +1,18 @@
 
 body {
-   /* review this. For some reason I can't set my background image
-   background: url(/assets/images/speedy-cyclist.JPG) */
+   /* review this. For some reason I can't set my background image */
+   /* background: url(/assets/images/speedy-cyclist.JPG) fixed; */
+   background-color:rgb(105, 149, 231) ;
 }
 
 header {
     /* review this code. it's causing issues and not allowing nav to move to the ride side
     display: flex; */
-    background-color: blueviolet;
+    background-color: rgb(200, 200, 237);
+}
+
+header h1 {
+    
 }
 
 nav {
@@ -19,18 +24,62 @@ nav ul{
     display: flex;
 }
 
+nav li {
+    margin: 5px;
+}
+
+nav li a:visited{
+    color: inherit;
+}
+
+main {
+    text-align: center;
+}
+
 #me-image {
     border-radius: 50%;
     height: 300px;
     width: 300px;
 }
 
-
-
-@media screen (max-width: 600px) {
-    /* add code here for phone view*/
+.card {
+    margin: 50px 150px;
 }
 
-@media screen (max-width: 1000px) {
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(200, 200, 237);
+}
+
+@media screen and (max-width: 1000px) {
     /* add code here for iPad view*/
+    #me-image {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .card {
+        margin: 50px;
+    }
 }
+
+
+@media screen and (max-width: 600px) {
+    /* add code here for phone view */
+    #me-image {
+        height: 150px;
+        width: 150px;
+        flex: 1 1 250px;
+    }
+
+    .card {
+        margin: 25px;
+    }
+}
+
