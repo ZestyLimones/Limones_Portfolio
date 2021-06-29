@@ -1,0 +1,36 @@
+
+body {
+   /* review this. For some reason I can't set my background image
+   background: url(/assets/images/speedy-cyclist.JPG) */
+}
+
+header {
+    /* review this code. it's causing issues and not allowing nav to move to the ride side
+    display: flex; */
+    background-color: blueviolet;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    display: flex;
+}
+
+#me-image {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+
+
+@media screen (max-width: 600px) {
+    /* add code here for phone view*/
+}
+
+@media screen (max-width: 1000px) {
+    /* add code here for iPad view*/
+}
