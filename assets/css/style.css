@@ -1,55 +1,87 @@
 
 body {
-   /* review this. For some reason I can't set my background image */
-   /* background: url(/assets/images/speedy-cyclist.JPG) fixed; */
    background-color:rgb(105, 149, 231) ;
 }
 
 header {
-    /* review this code. it's causing issues and not allowing nav to move to the ride side
-    display: flex; */
     background-color: rgb(200, 200, 237);
+    height: 50px;
+    width: 100%;
 }
 
-header h1 {
-    
+h1 {
+    font-size: 40px;
+    border: yellow solid 2px;
+    display: inline-block;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
+   float: right;
+   border: green 2px solid;
 }
 
 nav ul{
-    display: flex;
+    padding: 5px;
+  
 }
 
 nav li {
-    margin: 5px;
+    margin-left: 15px;
+   
 }
 
 nav li a:visited{
     color: inherit;
 }
 
-main {
+
+#banner {
+    height:200px;
+    width: 100%;
+    background: url("../images/cycling-dark-bicycle.jpg");
+    background-size: fixed;
     text-align: center;
 }
 
 #me-image {
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 .card {
-    margin: 50px 150px;
+    position: relative;
+    margin: 50px 100px;
+    display: flex
+}
+
+.card-title{
+    margin-right: 50px;
+    border-right: solid red 2px;
+}
+
+h2 {
+    width: 100px;
+}
+
+p {
+    line-height: 20px;
+    margin: 5px;
 }
 
 #projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+.project-card {
+    margin: 10px;
+}
+
+ul {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer {
@@ -57,8 +89,8 @@ footer {
     background-color: rgb(200, 200, 237);
 }
 
-@media screen and (max-width: 1000px) {
-    /* add code here for iPad view*/
+/* @media screen and (max-width: 1000px) {
+    add code here for iPad view
     #me-image {
         height: 250px;
         width: 250px;
@@ -67,19 +99,18 @@ footer {
     .card {
         margin: 50px;
     }
-}
+} */
 
-
+/* 
 @media screen and (max-width: 600px) {
-    /* add code here for phone view */
+    add code here for phone view
     #me-image {
         height: 150px;
         width: 150px;
-        flex: 1 1 250px;
     }
 
     .card {
         margin: 25px;
     }
-}
+} */
 
